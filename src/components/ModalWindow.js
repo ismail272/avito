@@ -2,8 +2,11 @@ import React from 'react';
 import BigImg from "./BigImg";
 import Comments from "./Comments";
 import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
 
 function ModalWindow(props) {
+    const dispatch = useDispatch();
+
 
     return (
         <div className={props.modalActive ? 'modal active' : 'modal'}>

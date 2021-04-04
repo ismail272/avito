@@ -1,5 +1,6 @@
 const initialState = {
     items: [],
+    comments: [],
     loading: false
 }
 

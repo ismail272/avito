@@ -1,11 +1,11 @@
-import React, {} from 'react';
+import React from 'react';
 import Image from "./Image";
-import { useSelector } from "react-redux";
+import {useSelector} from "react-redux";
+
 
 
 function Images(props) {
     const images = useSelector(state => state.images.items);
-
 
     return (
         <div className="images-block">
@@ -14,7 +14,7 @@ function Images(props) {
                     <Image key={image.id}
                            image={image}
                            modalActive={props.modalActive}
-                           setModalActive={props.setModalActive}/>
+                           setModalActive={props.setModalActive} />
                 )
             })}
         </div>

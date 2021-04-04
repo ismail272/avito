@@ -11,7 +11,8 @@ const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(loadImages())
-    })
+    }, [dispatch])
+
 
   return (
     <div className="App">

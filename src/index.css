@@ -5,6 +5,7 @@ body {
 .App {
   width: 960px;
   margin: auto;
+    max-width: 100%;
 }
 
 .header {
@@ -71,11 +72,13 @@ body {
 
 .modal-content {
     width: 1000px;
+    max-width: 100%;
     background-color: white;
     padding: 40px;
     box-sizing: border-box;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .btn button {
@@ -106,18 +109,19 @@ body {
 
 .add-name input {
     width: 600px;
+    max-width: 100%;
     padding: 15px;
     box-sizing: border-box;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
-
     font-size: 18px;
     outline: none;
     margin-bottom: 20px;
 }
 
-.add-commentary button{
+.add-commentary button {
     width: 600px;
+    max-width: 100%;
     background: #4997D0;
     border-radius: 3px;
     outline: none;
@@ -135,4 +139,60 @@ body {
 .date {
     color: #999999;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .image {
+        margin: 0 auto 20px auto;
+    }
+    .modal-content {
+        display: block;
+        width: 700px;
+    }
+    .big-img img {
+        width: 600px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .modal-content {
+        width: 600px;
+    }
+
+    .big-img img {
+        width: 500px;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .modal-content {
+        width: 500px;
+    }
+
+    .big-img img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .modal-content {
+        width: 400px ;
+    }
+
+    .big-img img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .modal-content {
+        width: 300px ;
+    }
+
+    .big-img img {
+        width: 250px;
+    }
 }
