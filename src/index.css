@@ -5,7 +5,7 @@ body {
 .App {
   width: 960px;
   margin: auto;
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -16,19 +16,18 @@ body {
 }
 
 .main {
-    min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 190px);
 }
 
 .images-block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .image {
-   margin-bottom: 30px;
-   cursor: pointer;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .footer {
@@ -36,175 +35,172 @@ body {
   border-top: 1px silver solid;
   align-items: center;
   height: 56px;
-    display: flex;
-
+  display: flex;
 }
 
 .vh-from-footer {
-    min-height: calc(100vh - 650px);
+  min-height: calc(100vh - 650px);
 }
 
 .copyright {
-    margin: auto;
-    font-size: 16px;
-    color: #CCCCCC;
+  margin: auto;
+  font-size: 16px;
+  color: #cccccc;
 }
 
 .modal {
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
 }
 
 .modal.active {
-    opacity: 1;
-    pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal-content {
-    width: 1000px;
-    height: 709px;
-    max-width: 100%;
-    background-color: white;
-    padding: 40px;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+  width: 1000px;
+  height: 709px;
+  max-width: 100%;
+  background-color: white;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btn button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: silver;
-    font-weight: bold;
-    width: 20px;
-    height: 20px;
-    font-size: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: silver;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
 }
 
 .btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .btn:hover {
-    color: red;
+  color: red;
 }
 
 .big-img {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .add-name input {
-    width: 600px;
-    max-width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    font-size: 18px;
-    outline: none;
-    margin-bottom: 20px;
+  width: 600px;
+  max-width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 20px;
 }
 
 .add-commentary button {
-    width: 600px;
-    max-width: 100%;
-    background: #4997D0;
-    border-radius: 3px;
-    outline: none;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
+  width: 600px;
+  max-width: 100%;
+  background: #4997d0;
+  border-radius: 3px;
+  outline: none;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
 }
 
 .comment {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .date {
-    color: #999999;
-    margin-bottom: 10px;
+  color: #999999;
+  margin-bottom: 10px;
 }
 
 .first-loading {
-    margin-left: 47%;
-    margin-top: 15%;
+  margin-left: 47%;
+  margin-top: 15%;
 }
 
 .big-img-loading {
-    width: 600px;
-    height: 400px;
+  width: 600px;
+  height: 400px;
 }
 
-
 @media only screen and (max-width: 800px) {
-    .image {
-        margin: 0 auto 20px auto;
-    }
-    .modal-content {
-        display: block;
-        width: 700px;
-    }
-    .big-img img {
-        width: 600px;
-        margin-top: 20px;
-    }
-
+  .image {
+    margin: 0 auto 20px auto;
+  }
+  .modal-content {
+    width: 700px;
+    height: 740px;
+  }
+  .big-img img {
+    width: 600px;
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    .modal-content {
-        width: 600px;
-    }
+  .modal-content {
+    width: 600px;
+  }
 
-    .big-img img {
-        width: 500px;
-        margin: 20px auto;
-    }
+  .big-img img {
+    width: 500px;
+    margin: 20px auto;
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    .modal-content {
-        width: 500px;
-    }
+  .modal-content {
+    width: 500px;
+  }
 
-    .big-img img {
-        width: 400px;
-    }
+  .big-img img {
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .modal-content {
-        width: 400px ;
-    }
+  .modal-content {
+    width: 400px;
+  }
 
-    .big-img img {
-        width: 300px;
-    }
+  .big-img img {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-    .modal-content {
-        width: 300px ;
-    }
+  .modal-content {
+    width: 300px;
+  }
 
-    .big-img img {
-        width: 250px;
-    }
+  .big-img img {
+    width: 250px;
+  }
 }
