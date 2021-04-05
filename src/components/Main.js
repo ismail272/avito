@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Images from "./Images";
-import ModalWindow from "./ModalWindow";
+import React, { useState } from 'react';
+import Images from './Images';
+import ModalWindow from './ModalWindow';
 
 function Main(props) {
   const [modalActive, setModalActive] = useState(false);

@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./components/App";
-import { Provider } from "react-redux";
-import { BrowserRouter, Route } from "react-router-dom";
-import store from "./redux/index";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './components/App';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
+import store from './redux/index';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,5 +16,5 @@ ReactDOM.render(
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );

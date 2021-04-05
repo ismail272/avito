@@ -1,8 +1,8 @@
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import thunk from "redux-thunk";
-import { createLogger } from "redux-logger";
-import imagesReducer from "./images";
-import modalReducer from "./modal";
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { createLogger } from 'redux-logger';
+import imagesReducer from './images';
+import modalReducer from './modal';
 
 const logger = createLogger({
   diff: true,

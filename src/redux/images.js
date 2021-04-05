@@ -5,13 +5,13 @@ const initialState = {
 
 const imagesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "images/load/start":
+    case 'images/load/start':
       return {
         ...state,
         loading: true,
       };
 
-    case "images/load/success":
+    case 'images/load/success':
       return {
         ...state,
         items: action.payload,

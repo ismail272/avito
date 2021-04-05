@@ -1,10 +1,10 @@
-import Header from "./Header";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
-import Footer from "./Footer";
-import Main from "./Main";
-import { loadImages } from "../redux/action";
-import ReactLoading from "react-loading";
+import Header from './Header';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import Footer from './Footer';
+import Main from './Main';
+import { loadImages } from '../redux/action';
+import ReactLoading from 'react-loading';
 
 function App() {
   const dispatch = useDispatch();

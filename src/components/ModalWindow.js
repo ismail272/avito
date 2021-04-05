@@ -1,11 +1,11 @@
-import React from "react";
-import BigImg from "./BigImg";
-import Comments from "./Comments";
-import { Link } from "react-router-dom";
+import React from 'react';
+import BigImg from './BigImg';
+import Comments from './Comments';
+import { Link } from 'react-router-dom';
 
 function ModalWindow(props) {
   return (
-    <div className={props.modalActive ? "modal active" : "modal"}>
+    <div className={props.modalActive ? 'modal active' : 'modal'}>
       <div className="modal-content">
         <div className="btn">
           <Link to="/">

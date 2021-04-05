@@ -1,13 +1,13 @@
 export const loadImages = () => {
   return (dispatch) => {
     dispatch({
-      type: "images/load/start",
+      type: 'images/load/start',
     });
-    fetch("https://boiling-refuge-66454.herokuapp.com/images")
+    fetch('https://boiling-refuge-66454.herokuapp.com/images')
       .then((response) => response.json())
       .then((json) => {
         dispatch({
-          type: "images/load/success",
+          type: 'images/load/success',
           payload: json,
         });
       });
@@ -17,13 +17,13 @@ export const loadImages = () => {
 export const loadModal = (id) => {
   return (dispatch) => {
     dispatch({
-      type: "modal/load/start",
+      type: 'modal/load/start',
     });
     fetch(`https://boiling-refuge-66454.herokuapp.com/images/${id}`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
-          type: "modal/load/success",
+          type: 'modal/load/success',
           payload: json,
         });
       });
