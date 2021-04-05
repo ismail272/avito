@@ -5,9 +5,6 @@ import ModalWindow from "./ModalWindow";
 function Main(props) {
     const [modalActive, setModalActive] = useState(false);
 
-
-
-
     return (
         <div className="main">
             <Images modalActive={modalActive} setModalActive={setModalActive}/>

@@ -72,6 +72,7 @@ body {
 
 .modal-content {
     width: 1000px;
+    height: 709px;
     max-width: 100%;
     background-color: white;
     padding: 40px;
@@ -140,6 +141,17 @@ body {
     color: #999999;
     margin-bottom: 10px;
 }
+
+.first-loading {
+    margin-left: 47%;
+    margin-top: 15%;
+}
+
+.big-img-loading {
+    width: 600px;
+    height: 400px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .image {
